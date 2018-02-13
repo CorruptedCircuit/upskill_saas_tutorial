@@ -39,8 +39,9 @@ gem 'font-awesome-sass', '4.6.2'
 #Use Hirb for better table display in console
 gem 'hirb', '0.7.3'
 
-group :development do
+group :development, :test do
   #Use sqlite3 as the database for the Active Record
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
@@ -54,7 +55,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :test, :production do
+group :production do
   #Use the PostgreSQL gem for Heroku production servers
   gem 'pg', '0.18.4'
 end
